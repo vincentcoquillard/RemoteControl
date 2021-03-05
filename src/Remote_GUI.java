@@ -4,9 +4,7 @@ public class Remote_GUI{
 		
 		TV TV_Device = new TV();
 		Radio Radio_Device = new Radio();
-		
 		ONOFF ONOFF_Command = new ONOFF();
-		
 		ALLONOFF ALLONOFF_Command = new ALLONOFF();
 		Station Station_Command = new Station();
 		Volume Volume_Command = new Volume();
@@ -18,6 +16,10 @@ public class Remote_GUI{
 	public void executeCommand(Device dev, Command cmd, String cmdType) {
 		cmd.execute(dev, cmd, cmdType);
 		//reloadGUI
+		System.out.println(dev);
+		System.out.println(dev.getStatusONOFF());
+		System.out.println(dev.getVolume());
+		System.out.println(dev.getStation());
 	}
 
 }

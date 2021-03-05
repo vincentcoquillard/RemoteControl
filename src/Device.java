@@ -18,4 +18,10 @@ public interface Device {
 	public void ALLOFF();
 	
 	public void UNDO();
+	
+	public boolean getStatusONOFF();
+	
+	public int getVolume();
+	
+	public int getStation();
 }
