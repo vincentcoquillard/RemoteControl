@@ -13,12 +13,6 @@ public interface Device {
 	
 	public void PreviousStation();
 	
-	public void ALLON();
-	
-	public void ALLOFF();
-	
-	public void UNDO();
-	
 	public boolean getStatusONOFF();
 	
 	public int getVolume();

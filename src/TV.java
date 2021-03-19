@@ -5,6 +5,8 @@ public class TV implements Device{
 	public int Station = 0;
 	public boolean ON = false;
 	
+	Radio Radio_Device;
+	
 	public TV() {
 		
 	}
@@ -18,7 +20,7 @@ public class TV implements Device{
 	}
 			
 	public void VolumeUP() {
-		if(this.Volume <= 9) {
+		if(this.Volume < 5) {
 			this.Volume++;
 		}
 	}
@@ -30,7 +32,7 @@ public class TV implements Device{
 	}
 			
 	public void NextStation() {
-		if(this.Station <= 9) {
+		if(this.Station < 5) {
 			this.Station++;
 		}
 	}
@@ -39,18 +41,6 @@ public class TV implements Device{
 		if(this.Station > 0) {
 			this.Station--;
 		}
-	}
-			
-	public void ALLON() {
-		
-	}
-			
-	public void ALLOFF() {
-		
-	}
-	
-	public void UNDO() {
-		
 	}
 	
 	public boolean getStatusONOFF() {
